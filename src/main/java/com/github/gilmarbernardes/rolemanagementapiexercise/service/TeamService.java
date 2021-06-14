@@ -73,9 +73,6 @@ public class TeamService {
 		team.setId(jsonTeam.get("id") != null ? (String) jsonTeam.get("id") : team.getId());
 		team.setName(jsonTeam.get("name") != null ? (String) jsonTeam.get("name") : team.getName());
 		team.setTeamLeadId(jsonTeam.get("teamLeadId") != null ? (String) jsonTeam.get("teamLeadId") : team.getTeamLeadId());
-
-		String teamMemberStr = (String) jsonTeam.get("teamMemberIds");
-		team.setTeamMemberIds(teamMemberStr.split(","));
 	}
 
 	/**

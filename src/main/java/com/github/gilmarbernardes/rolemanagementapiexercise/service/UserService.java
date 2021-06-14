@@ -91,8 +91,7 @@ public class UserService {
 	 * @return User
 	 */
 	public User update(User user, JSONObject jsonUser) {
-		setUserValues(jsonUser, user);
-
+		user.setRole(jsonUser.get("role") != null ? (String) jsonUser.get("role") : RoleEnum.DEV.getValue());
 		return user;
 	}
 
