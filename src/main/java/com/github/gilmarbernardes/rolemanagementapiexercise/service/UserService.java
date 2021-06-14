@@ -131,7 +131,7 @@ public class UserService {
 	 * @param id
 	 */
 	public User findByID(String id) {
-		return users.stream().filter(u -> id == u.getId()).collect(Collectors.toList()).get(0);
+		return users.stream().filter(u -> id.equalsIgnoreCase(u.getId())).collect(Collectors.toList()).get(0);
 	}
 
 	/**

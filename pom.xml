@@ -9,9 +9,10 @@
 		<version>2.5.1</version>
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
+	
 	<groupId>com.github.gilmarbernardes</groupId>
 	<artifactId>role-management-api-exercise</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.2-SNAPSHOT</version>
 	<name>role-management-api-exercise</name>
 	<description>An API to manage roles for users and teams</description>
 
